@@ -10,7 +10,7 @@ p {
       font-size: 2em;
     }
     .content-box {
-  padding: 20px;
+  padding: 25px;
   margin: 10px;
   background-color: #5d5df5;
   border: 1px solid #434247;
@@ -27,7 +27,7 @@ table {
     }
     
     th {
-      background-color: #ff2cc3;
+      background-color: #5d5df5;
     }
     
     form {
