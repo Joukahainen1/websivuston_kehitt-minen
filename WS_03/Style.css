@@ -27,7 +27,7 @@ table {
     }
     
     th {
-      background-color: rgb(245, 233, 195);
+      background-color: rgb(244, 232, 194);
     }
     
     form {
@@ -69,14 +69,27 @@ table {
       .transition-button:hover {
         background-color: lightcoral;
       }
-      .animation-box {
+     
+
+  .animation-box {
         width: 200px;
         height: 50px;
         background-color: rgb(119, 142, 119);
         position: relative;
-        animation: move 5s infinite alternate;
-      }
-      
+        animation: move 15s infinite alternate;
+      } 
+      .animation-box:hover {
+    transform: scale(1.1);
+    background-color: white;
+}   
+      .animation-box {
+    color: transparent;
+}
+
+.animation-box:hover {
+    background-color: white;
+    color: black;
+}
       @keyframes move {
         from {
           left: 0;
@@ -114,3 +127,6 @@ table {
         top: 0;
         color: lightgray;
       }
+     td {
+    background-color: white;
+}
