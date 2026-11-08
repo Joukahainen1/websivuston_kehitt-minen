@@ -3,7 +3,7 @@ p {
     }
     
     body {
-      background-color: rgb(131, 189, 243);
+      background-color: rgb(165, 183, 169);
     }
     
     h1 {
@@ -12,7 +12,7 @@ p {
     .content-box {
   padding: 25px;
   margin: 10px;
-  background-color: #5d5df5;
+  background-color: #f1f1f5;
   border: 1px solid #434247;
 }
 table {
@@ -27,7 +27,7 @@ table {
     }
     
     th {
-      background-color: #5d5df5;
+      background-color: rgb(245, 233, 195);
     }
     
     form {
@@ -56,10 +56,10 @@ table {
     }
     /* Animaatio */
     input[type="submit"].transition-button:hover {
-      background-color: #45a049;
+      background-color: #375338;
     }
     .transition-button {
-        background-color: lightblue;
+        background-color: rgb(242, 245, 244);
         padding: 10px 20px;
         border: none;
         cursor: pointer;
@@ -72,7 +72,7 @@ table {
       .animation-box {
         width: 200px;
         height: 50px;
-        background-color: lightgreen;
+        background-color: rgb(119, 142, 119);
         position: relative;
         animation: move 5s infinite alternate;
       }
@@ -86,7 +86,7 @@ table {
         }
       }
     .pseudo-list li:nth-child(odd) {
-        background-color: lightgray;
+        background-color: rgb(245, 233, 195);
       }
       
       .pseudo-list li:nth-child(even) {
