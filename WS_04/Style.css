@@ -87,7 +87,7 @@ table {
 }
 
 .animation-box:hover {
-    background-color: white;
+    background-color: rgb(249, 247, 247);
     color: black;
 }
       @keyframes DropDown {
