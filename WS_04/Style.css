@@ -56,7 +56,7 @@ table {
     }
     /* Animaatio */
     input[type="submit"].transition-button:hover {
-      background-color: #375338;
+      background-color: #ef3e3e;
     }
     .transition-button {
         background-color: rgb(242, 245, 244);
@@ -90,84 +90,112 @@ table {
     background-color: white;
     color: black;
 }
-      @keyframes move {
-        from {
-          left: 0;
+      @keyframes DropDown {
+        from { 
+          top: -50px;
+          opacity: 0;
         }
         to {
-          left: 100px;
+          top: 100px;
+          opacity: 1;
         }
       }
-    .pseudo-list li:nth-child(odd) {
-        background-color: rgb(245, 233, 195);
-      }
-      
-      .pseudo-list li:nth-child(even) {
-        background-color: white;
-      }
-      .filter-image {
-        filter: grayscale(100%);
-        transition: filter 0.3s ease;
-      }
-      
-      .filter-image:hover {
-        filter: grayscale(0%);
-      }
-      .quote {
-        position: relative;
-        padding-left: 20px;
-        font-style: italic;
-      }
-      
-      .quote::before {
-        content: '“';
-        font-size: 40px;
-        position: absolute;
-        left: 0;
-        top: 0;
-        color: lightgray;
-      }
-     td {
-    background-color: white;
-}
-/*tehtävä uusi*/
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-}
-.grid-item {
-  background-color: rgb(244, 232, 194);
-  padding: 20px;
-  text-align: center;
-}
-.flex-container {
-  display: flex;
-  justify-content: space-around;
-  gap: 10px;
-  align-items: center;
-}
-.box {
-  background-color: rgb(244, 232, 194);
-  padding: 20px;
-  margin: 10px;
-  text-align: center;
-}
-.responsive-box {
-  width: 100%;
-  max-width: 400px;
-  margin: auto;
-  background-color: rgb(244, 232, 194);
-  padding: 20px;
-}
+    .animation-box
+  {
+          animation: DropDown 1.5s ease-in-out;
+        }
+        @keyframes DropDown {
+          from {
+          transform: translateY(-30px);
+        opacity: 0;
+    }
 
-@media (max-width: 600px) {
-  .responsive-box {
-    background-color: lightcoral;
-  }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
-@media (min-width: 601px) {
-  .responsive-box {
-    background-color: lightseagreen;
-  }
-}
+        .pseudo-list li {
+          padding: 10px;
+        }
+        
+        .pseudo-list li:nth-child(odd) {
+          background-color: rgb(245, 233, 195);
+        }
+        
+        .pseudo-list li:nth-child(even) {
+          background-color: white;
+        }
+        .filter-image {
+          filter: grayscale(100%);
+          transition: filter 0.3s ease;
+        }
+        
+        .filter-image:hover {
+          filter: grayscale(0%);
+        }
+        .quote {
+          position: relative;
+          padding-left: 20px;
+          font-style: italic;
+        }
+        
+        .quote::before {
+          content: '“';
+          font-size: 40px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          color: lightgray;
+        }
+
+        td {
+          background-color: white;
+        }
+
+        /*tehtävä uusi*/
+        .grid-container {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 10px;
+        }
+
+        .grid-item {
+          background-color: rgb(244, 232, 194);
+          padding: 20px;
+          text-align: center;
+        }
+
+        .flex-container {
+          display: flex;
+          justify-content: space-around;
+          gap: 10px;
+          align-items: center;
+        }
+
+        .box {
+          background-color: rgb(244, 232, 194);
+          padding: 20px;
+          margin: 10px;
+          text-align: center;
+        }
+
+        .responsive-box {
+          width: 100%;
+          max-width: 400px;
+          margin: auto;
+          background-color: rgb(244, 232, 194);
+          padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+          .responsive-box {
+            background-color: lightcoral;
+          }
+        }
+
+        @media (min-width: 601px) {
+          .responsive-box {
+            background-color: lightseagreen;
+          }
+        }
